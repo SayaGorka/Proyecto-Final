@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oinky Desserts</title>
+
+
+    <link rel="stylesheet" href="estilos.css" type=""> <!--enlace para vincular mi hoja de estilo-->
+
+</head>
+
+<body>
+    <div id="container" > <!--div contiene toda la pagina web (es una caja con ciertas medidas)-->
+
+     <!--header style="border: 3px rgb(26, 12, 22) solid; background-color: aqua;"-->
+     <header> <!--es una caja que hace referencia a la cabezera del sitio web-->
+         <h1>Oinky Desserts</h1>
+    </header>
+
+    <nav> <!--nav me define una barra de navegacion-->
+         <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li id="pagina1" onmouseover="ver(1)" onmouseout="ocultar(1)"><a href="#" target="_blank">Menu</a>
+                <div id="subseccion1">
+                    <p><a href="#"  target="_blank">Comidas</a></p>
+                    <p><a href="#"  target="_blank">Bebidas</a></p>
+                    <p><a href="#"  target="_blank">Postres</a></p>
+                </div>
+            </li>   
+            <li onmouseover="ver(2)" onmouseout="ocultar(2)"><a href="#"  target="_blank">Nosotros</a>
+                 <div id="subseccion2">
+                    <p><a href="Biografia.html"  target="_blank">Quienes Somos?</a></p>
+                 </div>
+            </li>     
+                <!--ul>
+                   <li><a href="#"  target="_blank">submenu1</a></li>
+                   <li><a href="#"  target="_blank">submenu2</a></li>
+                </ul-->
+            <li><a href="#"  target="_blank">Contacto</a></li>
+         </ul>
+    </nav>
+    
+    <div class="clearfix"></div> <!--para que los elementos se queden en su lugar (no floten hacia la caja de arriba)-->
+
+    <section id="content" >
+
+            <!--article style="border: 3px rgb(231, 151, 211) solid; background-color: rgb(243, 165, 219);"-->
+        <article class="articulo" >
+            <h2>Sopita de cerditos</h2>
+            <p>Alguna vez habias visto algo como esto? bueno pues deberias probarlo.</p>
+        </article>
+
+        <article class="articulo">
+            <h2>Te de Canela</h2>
+            <p>Contamos con una gran variedad y sabores a tu gusto!!!.</p>
+        </article>
+
+        <article class="articulo">
+            <h2>Chocolate Oinky</h2>
+            <p>Chocolate calientito para tomar en dias frios.</p>
+        </article>
+
+        <article class="articulo">
+            <h2>Cafe </h2>
+            <p>Un clasico que todos adoran y quieren.</p>
+        </article>
+
+    </section>
+
+    <aside>  <!--semanticamente representa una caja lateral-->
+         <h1>Busca tu alimento favorito</h1>
+         <form>
+            <input type="text">
+            <input type="submit" value="Buscar" >
+         </form>
+    </aside>
+    
+    <div class="clearfix"></div>
+
+    <footer>
+        <p><marquee width=70%  scrolldelay="75-50-25">Tecnológico Nacional de México, Campus Iztapalapa II -
+        Dirección: Calle, Valle de México 47, miravalle, Iztapalapa, 09696, CDMX</marquee></p>
+    </footer>
+    
+    <!-- &nbsp;  un espaciado entre caracteres-->
+
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{ /* es un selector universal Se utiliza para seleccionar todos los elementos de la página*/
+    margin: 0px;
+    padding: 0px; /*margen interior dentro de una caja*/
+    box-sizing: border-box; /*ajusta el padding*/
+    text-decoration: none;
+   
+}
+/*-------------------------------------------------*/
+body{ /*este es un selector de etiqueta*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    background-image: url("1.jpg");
+ }
+/*----------------------------------------------------*/
+ #container{ /* selector de id*/
+    width: 70%; 
+    margin: 0px auto; /* me centro ese elemento*/
+    border: 2px black solid;
+}
+/*----------------------------------------------------*/
+
+/*-------------------------------------------------*/
+header{
+    background-color: rgb(207, 146, 208); /*pongo un fondo a mi cabecera*/
+    height: 100px;
+    width: 100%;
+    /* me creo un selector universal* para quitar espacio, ver arriba */
+    text-align: center; /*con esta propiedad centro el texto*/
+    line-height: 100px; /*atributo o propiedad para poner el texto en medio*/
+    color: white;
+    border-bottom: 1px solid rgb(17, 20, 18); /*pinto un borde por abajo* para separarlo*/
+}
+
+/*-------------------------------------------------*/
+nav{
+    background-color: rgb(230, 178, 239); /* un fondo al menu*/
+    height: 50px; /*pongo una altura a mi nav para que se vea*/
+    border-bottom: 1px solid rgb(17, 20, 18); /*pinto un borde por abajo* para separarlo*/
+    /*font-size: large;*/
+    padding-left: 10%;    
+}
+/*-------------------------------------------------*/
+nav li a{
+    color: rgb(255, 255, 255);
+    /*margin: 40px;*/    
+}
+/*-------------------------------------------------*/
+.subseccion1 .subseccion2{ 
+    position: absolute; 
+    top: 100%; 
+    left: 0px;  
+    background-color: #5bdc55; 
+    font:normal 0.8em arial;  
+    padding: 0.2em 0.5em ;
+    display: none;
+    
+}	
+/*-------------------------------------------------*/
+nav  li a:hover{
+    /*background: rgb(118, 170, 230);*/
+    color: rgb(246, 169, 242);
+}
+/*-------------------------------------------------*/
+nav ul li{ /*selecciono la nav y los elementos que estan dentro de el*/
+    float: left; /*los elementos se ponen uno al lado del otro */
+    list-style: none; /* para que no tenga ningún tipo de estilo de lista no numerada */
+    /*margin: 20px; /*le ponemos a los elementos margen por todos los lados para que se separen*/
+    margin-right: 90px; /*le ponemos a los elementos margen por la derecha para que se separen*/
+    line-height: 50px; /*para que cada uno de los enlaces esten centrados en la caja*/   
+    
+}
+/*-------------------------------------------------*/
+
+.clearfix{
+    clear:both;
+    
+}
+/*-------------------------------------------------*/
+#content{
+    float: left; /* 1 para que se coloque a un lado*/
+    /*box-sizing: border-box;*/
+    width:80% ;
+    /*width: calc(80% - 80px);*/
+    min-height:500px ;
+    /*min-height: calc(500px - 80px);*/
+    background-image: url("fondo.jpeg");
+    padding: 40px;
+}
+/*-------------------------------------------------*/
+.articulo{
+    color: rgb(87, 35, 35);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding-bottom: 20px;   
+}
+/*-------------------------------------------------*/
+
+.articulo:first-child{
+    border-top: 1px rgb(0, 0, 0) solid;
+    padding: 10px;
+    
+}
+
+
+/*-------------------------------------------------*/
+aside{
+    float: left; /* 1 para que se coloque a un lado*/
+    /*box-sizing: border-box;*/
+    width: 20%;
+    /*width: calc(20% - 20px);*/
+    min-height: 500px;
+    /*min-height: calc(500px - 20px);*/
+    background-color: rgb(241, 174, 237);
+    padding: 10px;
+    
+}
+/*-------------------------------------------------*/
+footer{
+    background-color: rgb(14, 13, 13);
+    color: rgb(240, 239, 232);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;  
+}
+/*-------------------------------------------------*/
+
+
